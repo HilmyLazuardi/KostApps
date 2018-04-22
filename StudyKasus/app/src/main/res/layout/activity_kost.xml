@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:scrollbars="vertical"
+    tools:context="com.example.hilmylazuardi.studykasus.Kost">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<TextView
+            android:id="@+id/tvKost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kost-Kostan"/>-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Kost Gold"
+            android:id="@+id/btnGold" >
+
+        </Button>
+
+        <ImageSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/btnGold"
+            android:id="@+id/imgSwitcher">
+        </ImageSwitcher>
+        <TextSwitcher
+            android:id="@+id/textSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imgSwitcher"/>
+
+        <Button
+            android:text="Kost Silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSilver"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Kost Bronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBronze"
+            android:layout_marginLeft="130dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

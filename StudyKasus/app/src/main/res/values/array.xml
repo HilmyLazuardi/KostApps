@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places">
+        <item>Kost Gold</item>
+        <item>Kost Silver</item>
+        <item>Kost Bronze</item>
+    </string-array>
+    <string-array name="place_desc">
+        <item>Kost Apps adalah aplikasi kost berbasis android yang di rancang untuk memenuhi tugas</item>
+        <item>Kost Apps adalah aplikasi kost berbasis android yang di rancang untuk memenuhi tugas</item>
+        <item>Kost Apps adalah aplikasi kost berbasis android yang di rancang untuk memenuhi tugas</item>
+    </string-array>
+    <string-array name="place_details">
+        <item>- Alamat Kost: Jl. Raya Karangampel No.20 RT/RW 14/07 Karangampel-Indramayu 45283\n
+            - No. Telepon: 0895374110160\n
+            - Harga Sewa: Rp 1.450.000 per bulan;\n
+            - Tempat Kost Untuk: Pria\n
+            - Mayoritas Penghuni: Mahasiswa\n
+            - Ukuran Kamar: Type A: 3,5 x 4 m; Type B: 3 x 4 m; Type C: 3 x 4 m\n
+            - Sekamar Boleh Berdua: Ya\n
+            - Biaya Tambahan Sekamar Berdua: Ada, negotiable.\n
+            - Fasilitas: Type A: 1 tempat tidur single, 1 lemari pakaian, 1 meja rias, 1 AC, kamar mandi di dalam, garasi untuk 1 mobil, laundry (Rp 100.000 per bulan per orang);\n
+            - Fasilitas Umum: Alat Listrik Ringan – Pantry – Ruang Makan – Ruang Duduk – Tempat Jemuran.\n
+            - Fasilitas Sekitar: Dekat Jalan Raya – Angkutan Umum – Pusat Perbelanjaan (Alfamart, Yogya, Indomart) –
+                Tempat Ibadah : Masjid – Lapangan Basket – Minimarket – Apotik – Klinik 24 Jam.\n
+            - Parkir Mobil: Ada, terbatas.\n
+            - Parkir Motor: Ada\n
+            - Waktu Bertamu: Jam 07:00 - 21:00\n
+            - Akses Lokasi: Mudah\n
+            - Info Tambahan: Bangunan Kost Baru, Bersih, Nyaman dan Aman.\n
+            - E-mail: lazuardihilmy7@gmail.com\n
+        </item>
+        <item>- Alamat Kost: Jl. Raya Karangampel No.20 RT/RW 14/07 Karangampel-Indramayu 45283\n
+            - No. Telepon: 0895374110160\n
+            - Harga Sewa: Rp 1.100.000 per bulan;\n
+            - Tempat Kost Untuk: Pria\n
+            - Mayoritas Penghuni: Mahasiswa\n
+            - Ukuran Kamar: Type A: 3,5 x 4 m; Type B: 3 x 4 m; Type C: 3 x 4 m\n
+            - Sekamar Boleh Berdua: Ya\n
+            - Biaya Tambahan Sekamar Berdua: Ada, negotiable.\n
+            - Fasilitas: Type A: 1 tempat tidur single, 1 lemari pakaian, 1 meja rias, 1 AC, kamar mandi di dalam, garasi untuk 1 mobil, laundry (Rp 100.000 per bulan per orang);\n
+            - Fasilitas Umum: Alat Listrik Ringan – Pantry – Ruang Makan – Ruang Duduk – Tempat Jemuran.\n
+            - Fasilitas Sekitar: Dekat Jalan Raya – Angkutan Umum – Pusat Perbelanjaan (Alfamart, Yogya, Indomart) –
+                Tempat Ibadah : Masjid – Lapangan Basket – Minimarket – Apotik – Klinik 24 Jam.\n
+            - Parkir Mobil: Ada, terbatas.\n
+            - Parkir Motor: Ada\n
+            - Waktu Bertamu: Jam 07:00 - 21:00\n
+            - Akses Lokasi: Mudah\n
+            - Info Tambahan: Bangunan Kost Baru, Bersih, Nyaman dan Aman.\n
+            - E-mail: lazuardihilmy7@gmail.com\n
+        </item>
+        <item>- Alamat Kost: Jl. Raya Karangampel No.20 RT/RW 14/07 Karangampel-Indramayu 45283\n
+            - No. Telepon: 0895374110160\n
+            - Harga Sewa: Rp. 700.000 per bulan\n
+            - Tempat Kost Untuk: Pria\n
+            - Mayoritas Penghuni: Mahasiswa\n
+            - Ukuran Kamar: Type A: 3,5 x 4 m; Type B: 3 x 4 m; Type C: 3 x 4 m\n
+            - Sekamar Boleh Berdua: Ya\n
+            - Biaya Tambahan Sekamar Berdua: Ada, negotiable.\n
+            - Fasilitas: Type A: 1 tempat tidur single, 1 lemari pakaian, 1 meja rias, 1 AC, kamar mandi di dalam, garasi untuk 1 mobil, laundry (Rp 100.000 per bulan per orang);\n
+            - Fasilitas Umum: Alat Listrik Ringan – Pantry – Ruang Makan – Ruang Duduk – Tempat Jemuran.\n
+            - Fasilitas Sekitar: Dekat Jalan Raya – Angkutan Umum – Pusat Perbelanjaan (Alfamart, Yogya, Indomart) –
+                Tempat Ibadah : Masjid – Lapangan Basket – Minimarket – Apotik – Klinik 24 Jam.\n
+            - Parkir Mobil: Ada, terbatas.\n
+            - Parkir Motor: Ada\n
+            - Waktu Bertamu: Jam 07:00 - 21:00\n
+            - Akses Lokasi: Mudah\n
+            - Info Tambahan: Bangunan Kost Baru, Bersih, Nyaman dan Aman.\n
+            - E-mail: lazuardihilmy7@gmail.com\n
+        </item>
+    </string-array>
+    <string-array name="place_locations">
+        <item>Karangampel, Indramayu</item>
+        <item>Karangampel, Indramayu</item>
+        <item>Karangampel, Indramayu</item>
+    </string-array>
+    <array name="place_avator">
+        <item>@drawable/k_avator</item>
+        <item>@drawable/s_avator</item>
+        <item>@drawable/o_avator</item>
+    </array>
+    <array name="places_picture">
+        <item>@drawable/k</item>
+        <item>@drawable/s</item>
+        <item>@drawable/o</item>
+    </array>
+</resources>
