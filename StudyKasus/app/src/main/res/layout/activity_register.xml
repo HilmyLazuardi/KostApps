@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.hilmylazuardi.studykasus.Register">
+
+    <ImageView
+        android:id="@+id/logo_regis"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/home"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KOST APPS"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logo_regis"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Username ..."
+        android:inputType="text"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_regis" />
+    <!--Masukkan password-->
+    <EditText
+        android:id="@+id/txt_pwdregis"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
+        android:textColorHint="@color/colorAccent"
+        android:hint="Password ..."
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_username" />
+    <!--ulangi password-->
+    <EditText
+        android:id="@+id/txt_ulang_pass"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
+        android:textColorHint="@color/colorAccent"
+        android:hint="Ulangi Password ..."
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pwdregis" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:background="@color/colorBlue"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_ulang_pass"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:background="@color/colorBlue"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toLeftOf="@id/btn_register"
+        app:layout_constraintTop_toBottomOf="@id/txt_ulang_pass" />
+
+</android.support.constraint.ConstraintLayout>

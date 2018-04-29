@@ -1,9 +1,8 @@
 package com.example.hilmylazuardi.studykasus;
 
-import android.annotation.SuppressLint;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.AnimationUtils;
@@ -14,8 +13,6 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewSwitcher;
-
-import org.w3c.dom.Text;
 
 public class Kost extends AppCompatActivity {
     private ImageSwitcher imgSwitcher;
