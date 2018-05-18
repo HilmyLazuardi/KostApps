@@ -5,5 +5,5 @@ package com.example.hilmylazuardi.studykasus;
  */
 
 public class Server {
-    public static final String URL = "http://192.168.43.121/kostapps/simple_api/";
+    public static final String URL = "http://128.110.2.64/kostapps/simple_api/";
 }
