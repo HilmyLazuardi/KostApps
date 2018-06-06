@@ -25,7 +25,9 @@
         <activity android:name=".Register"></activity>
         <activity android:name=".MainActivity" android:theme="@style/AppTheme." />
         <activity android:name=".Kost" android:theme="@style/AppTheme." />
-        <activity android:name=".BioActivity" android:theme="@style/AppTheme." />
+        <activity android:name=".BioActivity" android:theme="@style/AppTheme.PopupOverlay"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".KosActivity"
             android:parentActivityName=".MainActivity"

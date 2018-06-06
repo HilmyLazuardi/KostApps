@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,12 +17,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bio Pemilik"
+            android:text="Biodata"
             android:gravity="center"
             android:textStyle="italic"
             android:textSize="30dp"
-            android:layout_marginTop="50pt"
+            android:layout_marginTop="20pt"
             android:textColor="@color/colorPrimary" />
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ID:"
+                android:textSize="10pt"
+                android:layout_marginTop="10pt"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/id_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:layout_marginTop="10pt"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
         <TableRow>
             <TextView
                 android:layout_width="100dp"
@@ -32,29 +50,13 @@
                 android:layout_marginTop="10pt"
                 android:textColor="@color/colorPrimary"/>
             <TextView
+                android:id="@+id/nama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hilmy Lazuardi"
                 android:textSize="10pt"
                 android:layout_marginTop="10pt"
                 android:layout_marginLeft="20dp"
-                android:textColor="@color/colorPrimary"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="Email:"
-                android:textSize="10pt"
-                android:layout_marginTop="10pt"
-                android:textColor="@color/colorPrimary"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="lazuardihilmy7@gmail.com"
-                android:textSize="10pt"
-                android:layout_marginTop="10pt"
-                android:layout_marginLeft="20dp"
+                android:visibility="gone"
                 android:textColor="@color/colorPrimary"/>
         </TableRow>
         <TableRow>
@@ -66,30 +68,104 @@
                 android:layout_marginTop="10pt"
                 android:textColor="@color/colorPrimary"/>
             <TextView
+                android:id="@+id/alamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mundu, Karangampel"
                 android:textSize="10pt"
                 android:layout_marginTop="10pt"
                 android:layout_marginLeft="20dp"
+                android:visibility="gone"
                 android:textColor="@color/colorPrimary"/>
         </TableRow>
         <TableRow>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="No Hp:"
+                android:text="Status:"
                 android:textSize="10pt"
                 android:layout_marginTop="10pt"
                 android:textColor="@color/colorPrimary"/>
             <TextView
+                android:id="@+id/status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0895374110160"
                 android:textSize="10pt"
                 android:layout_marginTop="10pt"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/colorPrimary"/>
         </TableRow>
     </TableLayout>
-</ScrollView>
+</ScrollView>-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg"
+    tools:context="com.example.hilmylazuardi.studykasus.BioActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_bio" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add" />-->
+
+</android.support.design.widget.CoordinatorLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.example.hilmylazuardi.studykasus.BioActivity">-->
+
+<!--<Button
+    android:id="@+id/buttonTambahBiodata"
+    android:layout_width="186dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Tambah Biodata" />-->
+
+<!--
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/verticalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/tableBiodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp" >
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</LinearLayout>-->

@@ -14,4 +14,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay">
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay"></style>
+
 </resources>

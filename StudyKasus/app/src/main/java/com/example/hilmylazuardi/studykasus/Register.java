@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,7 +29,8 @@ public class Register extends AppCompatActivity {
 
     ProgressDialog pDialog;
     Button btn_register, btn_login;
-    EditText txt_username, txt_password, txt_confirm_password;
+    TextInputEditText txt_nama, txt_alamat, txt_status;
+    TextInputEditText txt_username, txt_password, txt_confirm_password;
     Intent intent;
 
     int success;
@@ -61,9 +63,13 @@ public class Register extends AppCompatActivity {
 
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_register = (Button) findViewById(R.id.btn_register);
-        txt_username = (EditText) findViewById(R.id.txt_username);
-        txt_password = (EditText) findViewById(R.id.txt_pwdregis);
-        txt_confirm_password = (EditText) findViewById(R.id.txt_ulang_pass);
+        txt_nama = (TextInputEditText) findViewById(R.id.txt_nama);
+        txt_alamat = (TextInputEditText) findViewById(R.id.txt_alamat);
+        txt_status = (TextInputEditText) findViewById(R.id.txt_status);
+
+        txt_username = (TextInputEditText) findViewById(R.id.txt_username);
+        txt_password = (TextInputEditText) findViewById(R.id.txt_pwdregis);
+        txt_confirm_password = (TextInputEditText) findViewById(R.id.txt_ulang_pass);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
 
@@ -82,6 +88,10 @@ public class Register extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
+                String nama = txt_nama.getText().toString();
+                String alamat = txt_alamat.getText().toString();
+                String status = txt_status.getText().toString();
+
                 String username = txt_username.getText().toString();
                 String password = txt_password.getText().toString();
                 String confirm_password = txt_confirm_password.getText().toString();
@@ -89,7 +99,7 @@ public class Register extends AppCompatActivity {
                 if (conMgr.getActiveNetworkInfo() != null
                         && conMgr.getActiveNetworkInfo().isAvailable()
                         && conMgr.getActiveNetworkInfo().isConnected()) {
-                    checkRegister(username, password, confirm_password);
+                    checkRegister(nama, alamat, status, username, password, confirm_password);
                 } else {
                     Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
                 }
@@ -97,7 +107,7 @@ public class Register extends AppCompatActivity {
         });
     }
 
-    private void checkRegister(final String username, final String password, final String confirm_password) {
+    private void checkRegister(final String nama, final String alamat, final String status, final String username, final String password, final String confirm_password) {
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
         pDialog.setMessage("Register ...");
@@ -121,6 +131,10 @@ public class Register extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
+
+                        txt_nama.setText("");
+                        txt_alamat.setText("");
+                        txt_status.setText("");
 
                         txt_username.setText("");
                         txt_password.setText("");
@@ -154,6 +168,9 @@ public class Register extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
+                params.put("nama", nama);
+                params.put("alamat", alamat);
+                params.put("status", status);
                 params.put("username", username);
                 params.put("password", password);
                 params.put("confirm_password", confirm_password);

@@ -56,6 +56,8 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent(MainActivity.this, Login.class);
                 finish();
                 startActivity(intent);
+                Toast.makeText(getApplicationContext(), "Berhasil Keluar",
+                        Toast.LENGTH_LONG).show();
             }
         });
 
